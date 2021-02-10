@@ -10,6 +10,10 @@ $(call inherit-product, vendor/xiaomi/surya/surya-vendor.mk)
 # Poco Parts
 $(call inherit-product-if-exists, vendor/PocoParts/pocoparts.mk)
 
+# Atrace
+PRODUCT_PACKAGES += \
+    android.hardware.atrace@1.0-service
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
