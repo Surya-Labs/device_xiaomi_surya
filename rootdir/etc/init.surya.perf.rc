@@ -75,7 +75,7 @@ on early-init
     write /sys/block/sde/queue/iostats 0
     write /sys/block/sdf/queue/iostats 0
 
-on late-init
+on post-fs
     # Start services early for bootanim
     start surfaceflinger
     start bootanim
