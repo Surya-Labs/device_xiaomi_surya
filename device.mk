@@ -86,6 +86,10 @@ PRODUCT_COPY_FILES += \
 # FM
 BOARD_HAVE_QCOM_FM := true
 
+# Freeform Multiwindow
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.freeform_window_management.xml
+
 # GPS
 LOC_HIDL_VERSION := 4.0
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
