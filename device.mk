@@ -102,9 +102,6 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor
 
 PRODUCT_PACKAGES += \
-    libshim_megvii
-
-PRODUCT_PACKAGES += \
     Snap
 
 PRODUCT_COPY_FILES += \
