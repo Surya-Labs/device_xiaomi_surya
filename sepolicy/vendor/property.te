@@ -1,2 +1,5 @@
 # IR
 type lirc_prop, property_type;
+
+# Power HAL
+type vendor_power_prop, property_type;

@@ -37,6 +37,9 @@ ro.gfx.driver.1                    u:object_r:exported3_default_prop:s0
 # IR
 ro.lirc.dev                        u:object_r:lirc_prop:s0
 
+# Power HAL
+vendor.powerhal.                   u:object_r:vendor_power_prop:s0
+
 # Sensors
 persist.sensor.                    u:object_r:persist_sensors_prop:s0
 
