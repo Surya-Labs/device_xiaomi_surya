@@ -20,6 +20,25 @@
         "repository": "Surya-Project/vendor_PocoParts",
         "target_path": "vendor/PocoParts",
         "branch": "aospk"
+    },
+    {
+        "remote": "github",
+        "repository": "Surya-Project/android_hardware_qcom_display",
+        "target_path": "hardware/qcom-caf/sm8150-surya/display",
+        "branch": "lineage-18.1-caf-sm8150"
+    },
+    {
+        "remote": "github",
+        "repository": "Surya-Project/android_hardware_qcom_media",
+        "target_path": "hardware/qcom-caf/sm8150-surya/media",
+        "branch": "lineage-18.1-caf-sm8150"
+    },
+    {
+        "remote": "github",
+        "repository": "Surya-Project/android_hardware_qcom_audio",
+        "target_path": "hardware/qcom-caf/sm8150-surya/audio",
+        "branch": "lineage-18.1-caf-sm8150"
+
     }
 
 ]
