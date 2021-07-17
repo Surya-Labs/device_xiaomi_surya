@@ -7,6 +7,9 @@
 # Inherit the proprietary setup
 $(call inherit-product, vendor/xiaomi/surya/surya-vendor.mk)
 
+# Poco Parts
+$(call inherit-product-if-exists, vendor/PocoParts/pocoparts.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \

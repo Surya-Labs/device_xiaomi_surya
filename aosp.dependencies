@@ -14,6 +14,12 @@
         "repository": "LineageOS/android_hardware_xiaomi",
         "target_path": "hardware/xiaomi",
         "branch": "lineage-18.1"
+    },
+    {
+        "remote": "github",
+        "repository": "Surya-Project/vendor_PocoParts",
+        "target_path": "vendor/PocoParts",
+        "branch": "aospk"
     }
 
 ]
