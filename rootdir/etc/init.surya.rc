@@ -3,7 +3,6 @@
 #
 
 on init
-    chown system system /proc/tp_gesture
     chmod 0644 /proc/tp_gesture
 
     chmod 0664 /sys/class/thermal/thermal_message/sconfig
