@@ -429,8 +429,6 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 PRODUCT_PACKAGES += \
-    KarnaWifiOverlay \
-    SuryaWifiOverlay \
     WifiOverlay
 
 PRODUCT_COPY_FILES += \
