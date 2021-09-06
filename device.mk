@@ -326,7 +326,6 @@ PRODUCT_COPY_FILES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlay \
     libjson \
     libril \
     librilutils \
