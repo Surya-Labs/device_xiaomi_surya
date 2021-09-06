@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
 # Inherit some common hentaiOS stuff.
-$(call inherit-product, vendor/hentai/config/common.mk)
+$(call inherit-product, vendor/hentai/config/common_telephony.mk)
 $(call inherit-product, vendor/hentai/build/product/hentai_product.mk)
 
 PRODUCT_NAME := hentai_surya
