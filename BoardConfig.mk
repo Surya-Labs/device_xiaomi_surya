@@ -9,6 +9,9 @@ BOARD_VENDOR := xiaomi
 DEVICE_PATH := device/xiaomi/surya
 COMMON_PATH := device/qcom/common
 
+# Override Hals
+OVERRIDE_QCOM_HARDWARE_VARIANT := sm8150-surya
+
 BUILD_BROKEN_DUP_RULES := true
 
 # Architecture
