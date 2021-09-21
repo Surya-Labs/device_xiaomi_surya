@@ -164,13 +164,11 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    WaveSuryaFrameworks \
-    WaveSuryaSettings \
     KarnaFrameworks \
-    NoCutoutOverlay \
-    NotchBarKiller \
     SuryaFrameworks \
-    SuryaSystemUI
+    SuryaSystemUI \
+    WaveSuryaSettings \
+    WaveSuryaFrameworks
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
