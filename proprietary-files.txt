@@ -12,6 +12,35 @@ vendor/lib64/libadsprpc.so|77bcb86aceb726f45ef853f10d27d86211db4429
 vendor/lib64/libmdsprpc.so|0e3d865eb12827de8bef517e54be1b42c4c82484
 vendor/lib64/libsdsprpc.so|f1f31d4a306dbd6fef2f1b54cf1c7410c37900aa
 
+# Audio - from QSSI(11600) & MANNAR(05200)
+system_ext/etc/permissions/audiosphere.xml
+-system_ext/framework/audiosphere.jar
+-system_ext/framework/vendor.qti.voiceprint-V1.0-java.jar
+system_ext/lib/libbinauralrenderer_wrapper.qti.so
+system_ext/lib/libhoaeffects_csim.so
+system_ext/lib/libhoaeffects.qti.so
+system_ext/lib/liblistenjni.qti.so
+system_ext/lib/liblistensoundmodel2.qti.so
+system_ext/lib/libvr_amb_engine.so
+system_ext/lib/libvr_object_engine.so
+system_ext/lib/libvr_sam_wrapper.so
+-system_ext/lib/libvraudio.so
+system_ext/lib/libvraudio_client.qti.so
+system_ext/lib/vendor.qti.hardware.audiohalext@1.0.so
+system_ext/lib/vendor.qti.voiceprint@1.0.so
+system_ext/lib64/libbinauralrenderer_wrapper.qti.so
+system_ext/lib64/libhoaeffects_csim.so
+system_ext/lib64/libhoaeffects.qti.so
+system_ext/lib64/liblistenjni.qti.so
+system_ext/lib64/liblistensoundmodel2.qti.so
+system_ext/lib64/libvr_amb_engine.so
+system_ext/lib64/libvr_object_engine.so
+system_ext/lib64/libvr_sam_wrapper.so
+-system_ext/lib64/libvraudio.so
+system_ext/lib64/libvraudio_client.qti.so
+system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so
+system_ext/lib64/vendor.qti.voiceprint@1.0.so
+
 # ADSP modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|59cbdf5d84ba2ff64014941f3ad9e6c2c35e2c06
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so|67e36bfe46b82bc3e0603bf58d638293fcadd4aa
@@ -122,6 +151,17 @@ vendor/lib/hw/audio.primary.sm6150.so|34db41796d835b8f6d9874411f97dd4ae0987413
 vendor/lib/libaudio_log_utils.so|71ec4d31ad6c9e9a4bee8db7b5ab55b70ef7c4c3
 vendor/lib64/hw/audio.primary.sm6150.so|77be11e783a9f6708ce625e56b9128333fa11fc7
 vendor/lib64/libaudio_log_utils.so|6091c30d5724adb31a3b4c71379cc004c235905a
+
+# Av - from QSSI(12100) & MANNAR(05700)
+system_ext/lib/extractors/libmmparserextractor.so
+system_ext/lib/libavenhancements.so
+system_ext/lib/libmmosal.so
+system_ext/lib/libmmparser_lite.so
+-system_ext/lib/libqct_resampler.so
+system_ext/lib64/extractors/libmmparserextractor.so
+system_ext/lib64/libavenhancements.so
+system_ext/lib64/libmmosal.so
+system_ext/lib64/libmmparser_lite.so
 
 # Batterysecret
 vendor/bin/batterysecret|c653ff3305229b3c2bd99162fbe35118de35abeb
@@ -485,6 +525,18 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|e70fda0288
 # Display calibration
 vendor/etc/hdr_config.cfg|14bd7906643998c6b6bb51be5f20007232eaccc3
 vendor/etc/sdr_config.cfg|4e0901a44be67f92b747e2c34d13f8858f9cc010
+
+# Display - from QSSI(11600) & MANNAR(05200)
+product/etc/permissions/com.qti.snapdragon.sdk.display.xml
+-product/framework/com.qti.snapdragon.sdk.display.jar
+-system_ext/app/colorservice/colorservice.apk
+system_ext/lib64/libsd_sdk_display.qti.so
+system_ext/lib64/libsdm-disp-apis.qti.so
+system_ext/lib64/vendor.display.color@1.0.so
+system_ext/lib64/vendor.display.color@1.1.so
+system_ext/lib64/vendor.display.color@1.2.so
+system_ext/lib64/vendor.display.color@1.3.so
+system_ext/lib64/vendor.display.postproc@1.0.so
 
 # DPM - from LA.UM.9.1.r1-09600-SMxxx0.0
 framework/tcmclient.jar|cdd1ea7143a5a7acc3909b5cfa706650179647c7
