@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_surya.mk
+    $(LOCAL_DIR)/arrow_surya.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_surya-user \
-    dot_surya-userdebug \
-    dot_surya-eng
+    arrow_surya-user \
+    arrow_surya-userdebug \
+    arrow_surya-eng

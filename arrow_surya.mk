@@ -18,21 +18,22 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit from common DotOS configuration
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit from common configuration
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
+# Boot Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Gapps
+ARROW_GAPPS=true
+
 # Device identifier
-PRODUCT_NAME := dot_surya
+PRODUCT_NAME := arrow_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# Target
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_BLUR := true
