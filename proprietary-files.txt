@@ -155,6 +155,17 @@ vendor/lib/libaudio_log_utils.so|71ec4d31ad6c9e9a4bee8db7b5ab55b70ef7c4c3
 vendor/lib64/hw/audio.primary.sm6150.so|77be11e783a9f6708ce625e56b9128333fa11fc7
 vendor/lib64/libaudio_log_utils.so|6091c30d5724adb31a3b4c71379cc004c235905a
 
+# Av - from QSSI(12100) & MANNAR(05700)
+system_ext/lib/extractors/libmmparserextractor.so
+system_ext/lib/libavenhancements.so
+system_ext/lib/libmmosal.so
+system_ext/lib/libmmparser_lite.so
+-system_ext/lib/libqct_resampler.so
+system_ext/lib64/extractors/libmmparserextractor.so
+system_ext/lib64/libavenhancements.so
+system_ext/lib64/libmmosal.so
+system_ext/lib64/libmmparser_lite.so
+
 # Batterysecret
 vendor/bin/batterysecret|c653ff3305229b3c2bd99162fbe35118de35abeb
 vendor/etc/init/init.batterysecret.rc|bf91962da6c8f77033f209d34434acc10c467699
