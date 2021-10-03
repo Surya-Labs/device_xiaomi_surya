@@ -18,26 +18,35 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit from common DotOS configuration
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit from common configuration
+$(call inherit-product, vendor/conquer/config/common.mk)
 
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
+# Boot Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Gapps
+TARGET_USE_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+
 # Device identifier
-PRODUCT_NAME := dot_surya
+PRODUCT_NAME := conquer_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Target
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# Conquer Stuffs
+CONQUER_BUILD_TYPE := Unified 
 TARGET_SUPPORTS_BLUR := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="surya_global-user 11 RKQ1.200826.002 V12.5.1.0.RJGMIXM release-keys"
 
 BUILD_FINGERPRINT := POCO/surya_global/surya:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys
+
+PRODUCT_PRODUCT_PROPERTIES += \
+	ro.conquer.device_name=POCO X3 NFC
