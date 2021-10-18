@@ -678,10 +678,10 @@ vendor/lib64/vendor.qti.gnss@4.0.so|5ef1845cf0a310a52bfbdbc719685270ea4e39b3
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|3ff445db2dd2db1a1068fe70a54a6c04fbdd3123
 
 # Graphics (Adreno) - from LA.UM.9.16.r1-05700-MANNAR.0
-vendor/gpu/kbc/sequence_manifest.bin
-vendor/gpu/kbc/unified_kbcs_32.bin
-vendor/gpu/kbc/unified_kbcs_64.bin
-vendor/gpu/kbc/unified_ksqs.bin
+vendor/gpu/kbc/sequence_manifest.bin|cc050a8058904871b3cfabec74521d42f0a61a1f
+vendor/gpu/kbc/unified_kbcs_32.bin|05eaf512102e4a0f1cc57c91592f64e6584be601
+vendor/gpu/kbc/unified_kbcs_64.bin|a4d0466046bb00281013054a158d87b2ab4bf5cd
+vendor/gpu/kbc/unified_ksqs.bin|8f77dc004796d58acb959e78f4994c5d6b90baef
 vendor/lib/egl/libEGL_adreno.so|b648bf2510a74c9e3f3e90ccd59583ac4f4557ff
 vendor/lib/egl/libGLESv1_CM_adreno.so|2ed252a7049e934d832f01413a6eb83dca51a1c8
 vendor/lib/egl/libGLESv2_adreno.so|4376838ca36d240b727f58617eeea57c773490ce
@@ -695,8 +695,8 @@ vendor/lib/libadreno_utils.so|2c10296084d6b9dd349c442db37cf033948943ea
 vendor/lib/libc2d30_bltlib.so|117f775a4a61647b3628d9cfd64a05bef0646a14
 vendor/lib/libgpudataproducer.so|78b3b4ea71e9c4c5ca06aed210ad7ef79c49f011
 vendor/lib/libgsl.so|a96cf2afda4e8467cc9f978f8324245f83d4f778
-vendor/lib/libkcl.so
-vendor/lib/libkernelmanager.so
+vendor/lib/libkcl.so|5767313464ef2154f197913756b7d6fe83c2ebda
+vendor/lib/libkernelmanager.so|9629679d3b69c1451e7504628669cd812197d61f
 vendor/lib/libllvm-glnext.so|e8dc657a9a860848134f4fc8730d87b537f23025
 vendor/lib64/egl/eglSubDriverAndroid.so|89d44cb02c3cd8e042aa2ef32b16fac37f260d6f
 vendor/lib64/egl/libEGL_adreno.so|985028da10f1ceb5dea59f83681e5765e552d1b4
@@ -714,8 +714,8 @@ vendor/lib64/libadreno_utils.so|784e6784cdbdb7924bd8c7dc57528e54b589c18b
 vendor/lib64/libc2d30_bltlib.so|3732f8338eef96657c3c080e33fe484c7a184109
 vendor/lib64/libgpudataproducer.so|8496bd68ad6137dd2e3f85400c5c116373f36c43
 vendor/lib64/libgsl.so|8e7e2b031fa80de36091cfcd3eb00d97a4a258cb
-vendor/lib64/libkcl.so
-vendor/lib64/libkernelmanager.so
+vendor/lib64/libkcl.so|c49641bf75e802ab4bc7a85ba6932085ed4a8fe0
+vendor/lib64/libkernelmanager.so|0240e72a89074c1fcff484c6407dec8ad42c0ecf
 vendor/lib64/libllvm-glnext.so|a001568973085171486af9d23de1af597edc07e3
 vendor/lib64/libllvm-qcom.so|82ee88a3cbbdb21deb7ffcf6ea96f2c75534a29a
 
@@ -1223,7 +1223,7 @@ vendor/etc/thermald-devices.conf|eaa11ec5435404df861a76e5c857e93028ed7ef4
 
 # Thermal - from LA.UM.9.1.r1-09600-SMxxx0.0
 vendor/etc/init/init_thermal-engine.rc|a0310f09da9f09c67e110607b73aec9f9f981c4c
-vendor/lib64/libthermalclient.so|cff478fac67b22f65ac909d53321be2d0087933d
+vendor/lib64/libthermalclient.so|41274c82e1a472d12b2ebcb4156f7f77b109efa8
 
 # Time - from LA.UM.9.1.r1-10200-SMxxx0.0
 -vendor/app/TimeService/TimeService.apk|1a5f39aa2969feee50ff81ec870b5e2669ae515e
