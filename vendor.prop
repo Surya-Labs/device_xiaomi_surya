@@ -17,6 +17,7 @@ persist.vendor.audio.ring.filter.mask=0
 persist.vendor.audio.spv3.enable=true
 persist.vendor.audio.voicecall.speaker.stereo=true
 persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+ro.audio.monitorRotation=true 
 ro.af.client_heap_size_kbyte=7168
 ro.vendor.audio.sdk.fluencetype=none
 ro.vendor.audio.sdk.ssr=false
@@ -86,6 +87,9 @@ vendor.audio.use.sw.ape.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
 vendor.voice.path.for.pcm.voip=true
 
+# Atfwd
+persist.radio.atfwd.start=false
+
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.bluetooth.a2dp_offload.disabled=false
@@ -107,11 +111,6 @@ camera.disable_zsl_mode=1
 # CNE
 persist.vendor.cne.feature=1
 
-# Data modules
-persist.vendor.data.iwlan.enable=true
-persist.vendor.data.mode=concurrent
-
-<<<<<<< HEAD
 # Dirac
 audio.dirac.logging=0
 ro.audio.soundfx.dirac=true
@@ -120,8 +119,6 @@ persist.dirac.acs.controller=qem
 persist.dirac.acs.storeSettings=1
 persist.dirac.acs.ignore_error=1
 
-=======
->>>>>>> 64e8ec4... surya: drop old XiaomiParts and Introduce PocoParts
 # DPM
 persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
@@ -135,10 +132,14 @@ debug.sf.enable_hwc_vds=1
 debug.sf.hw=0
 debug.sf.latch_unsignaled=0
 persist.sys.sf.color_saturation=1.0
+ro.vendor.cabc.enable=true
+ro.vendor.bcbc.enable=false
+ro.vendor.dfps.enable=true
 ro.vendor.display.ad=1
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
 ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
 ro.vendor.display.sensortype=2
+ro.vendor.fps.switch.default=true
 vendor.display.comp_mask=0
 vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
 vendor.display.disable_decimation=1
@@ -151,6 +152,10 @@ vendor.display.enable_default_color_mode=1
 vendor.display.enable_null_display=0
 vendor.display.enable_optimize_refresh=1
 vendor.gralloc.disable_ubwc=0
+
+# HDMI
+persist.demo.hdmirotationlock=false
+
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
@@ -185,6 +190,9 @@ persist.vendor.ims.disableQXDMLogs=1
 # Incremental FS
 ro.incremental.enable=1
 
+# NFC 
+ro.vendor.se.type=HCE,UICC
+
 # Media
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
@@ -197,6 +205,7 @@ ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.qti.va_aosp.support=1
 
 # Radio
+DEVICE_PROVISIONED=1
 persist.vendor.radio.add_power_save=1
 persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.atfwd.start=true
@@ -211,6 +220,12 @@ persist.vendor.radio.rat_on=combine
 persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.report_codec=1
 persist.vendor.radio.sib16_support=1
+persist.radio.multisim.config=dsds
+ril.subscription.types=NV,RUIM
+ro.telephony.default_cdma_sub=0
+ro.telephony.default_network=22,20
+ro.telephony.iwlan_operation_mode=legacy
+telephony.lteOnCdmaDevice=1
 
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE

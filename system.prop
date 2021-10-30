@@ -14,11 +14,20 @@ ro.bluetooth.library_name=libbluetooth_qti.so
 vendor.bluetooth.soc=cherokee
 
 # Camera
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap,org.pixelexperience.faceunlock
+camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera 
 
 # Battery Property
 ro.charger.enable_suspend=true
 persist.vendor.quick.charge=1
+
+# Data modules
+persist.vendor.data.iwlan.enable=true
+persist.vendor.data.mode=concurrent
+ro.vendor.use_data_netmgrd=true
+
+#initialize QCA1530 detection
+sys.qca1530=detect
 
 # DPM
 persist.vendor.dpm.feature=11
@@ -33,6 +42,9 @@ media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
 mmp.enable.3g2=true
+
+#13631487 is decimal sum of supported codecs in AAL#codecs:(PARSER_)AAC AC3 AMR_NB AMR_WB ASF AVI DTS FLV 3GP 3G2 MKV MP2PS MP2TS MP3 OGG QCP WAV FLAC AIFF APE DSD MOV XVID
+vendor.mm.enable.qcom_parser=63963135
 persist.mm.enable.prefetch=true
 
 # Netflix custom property
@@ -41,23 +53,21 @@ ro.netflix.bsp_rev=Q6150-17263-1
 # System prop for NFC DT
 ro.nfc.port=I2C
 
-# Radio
-persist.radio.multisim.config=dsds
-ril.subscription.types=RUIM
-ro.telephony.default_cdma_sub=0
-ro.telephony.default_network=22,22
-telephony.lteOnCdmaDevice=1
-
 # Recovery
 ro.recovery.ui.margin_height=48
 
 # Time
+persist.timed.enable=true
 persist.vendor.delta_time.enable=true
 
 # WiFi
+config.disable_rtt=true
 wifi.interface=wlan0
 
 # ZRAM
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=180
 ro.zram.periodic_wb_delay_hours=24
+
+# support otg reverse charge
+persist.vendor.otg_control=true
